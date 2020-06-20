@@ -1,0 +1,422 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/*font-family: 'Roboto', sans-serif;*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.navbar-light .navbar-nav .nav-link{
+
+    color: gray;
+    text-transform: uppercase;
+    font-size: 18px;
+    margin-left: 30px;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+header{
+    background-color: #f9f9f9;
+
+
+}
+
+.banner{
+    background-image: url(../images/Banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center ;
+
+
+
+}
+
+.banner h1{
+    color: white;
+    font-size: 50px;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+
+
+}
+.banner span{
+    display: block;
+    height: 2px;
+    width: 100%;
+    background: #007dc5;
+
+}
+.banner p{
+    color: white;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+    padding: 30px 0px;
+}
+
+.banner a{
+    background: transparent;
+    border: none;
+    border: 1px solid #007dc5;
+    padding: 13px 20px;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 30px;
+}
+
+.banner a:hover{
+    background-color: #007dc5;
+    border: 1px solid transparent;
+}
+
+.banner .row{
+    min-height: 100vh;
+}
+
+.icon{
+    position: absolute;
+    color: white;
+    font-size: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 110%;
+    animation: updown 1s linear infinite;
+    animation-direction: alternate;
+
+}
+
+@keyframes updown{
+    0%{
+        top:110%
+    }
+    100%{
+        top: 120%
+    }
+
+
+}
+
+.simple-section{
+    background-color:#f9f9f9;
+    padding: 50px 0px;
+
+
+}
+.simple-section h1{
+    font-size: 25px;
+    text-transform: uppercase;
+    color: gray;
+    
+
+}
+
+.simple-section p{
+    font-size: 15px;
+    color: gray;
+    
+
+}
+
+.feature{
+    padding: 50px 0px;
+
+
+}
+
+.feature-icon{
+    margin: auto;
+    width: 100px;
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#48baff+50,5fc3ff+50,48baff+97 */
+background: #48baff; /* Old browsers */
+background: -moz-linear-gradient(left,  #48baff 50%, #5fc3ff 50%, #48baff 97%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  #48baff 50%,#5fc3ff 50%,#48baff 97%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  #48baff 50%,#5fc3ff 50%,#48baff 97%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#48baff', endColorstr='#48baff',GradientType=1 ); /* IE6-9 */
+
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    line-height: 100px;
+
+
+}
+.feature h3{
+    font-size: 20px;
+    color: gray;
+    font-family: 'Roboto', sans-serif;
+    padding-top: 30px;
+
+
+}
+.feature p{
+    font-size: 14px;
+    color: gray;
+    font-family: 'Roboto', sans-serif;
+    padding-top: 7px;
+
+
+}
+
+.showcase{
+    background-color: #f9f9f9;
+    padding: 80px 0px 114px;
+
+
+}
+
+.showcase h1{
+    font-family: 'Roboto', sans-serif;
+    font-size: 35px;
+    color: gray;
+
+
+    
+}
+
+.showcase p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: gray;
+    padding-bottom: 50px;
+
+    
+}
+
+.image{
+    position: relative;
+
+
+}
+
+
+.image::before{
+    content: '';
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 0%;
+    background-color: #2cadf7b7;
+    transition: .5s all;
+    
+
+    
+}
+.image:hover::before{
+    height: 50%;
+
+}
+
+.image::after{
+    content:  '';
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    width: 100%;
+    height: 0%;
+    background-color: #2cadf7b7;
+    transition: .5s all;
+
+
+}
+.image:hover::after{
+    height: 50%;
+
+}
+
+.image-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 20px;
+    color: white;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    opacity: 0;
+    transition: .5s all;
+}
+
+.image-icon i{
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 5px;
+
+
+}
+.image:hover .image-icon{
+    opacity: 1;
+}
+
+
+.contact{
+    background-image: url(../images/image7.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px 0 80px;
+    position: relative;
+
+}
+
+.contact::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #2e394db6;
+}
+
+.heading h1{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 35px;
+    font-weight: 300;
+
+
+
+}
+
+.heading p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.541);
+    padding-bottom: 25px;
+  
+
+
+}
+
+.contact input{
+    background-color: transparent;
+    outline: none;
+
+
+}
+
+.contact input:focus{
+    background-color: transparent;
+    outline: none;
+
+
+}
+
+.contact textarea{
+    background-color: transparent;
+     outline: none;
+
+    
+}
+
+.contact textarea:focus{
+    background-color: transparent;
+    outline: none;
+    
+
+
+}
+
+.contact input[type="checkbox"]{
+    background-color: #99a0a9;
+
+}
+
+.form-check{
+    color: white;
+}
+
+.btn-custom{
+    background: transparent;
+    border: none;
+    border: 1px solid #007dc5;
+    padding: 7px 20px;
+    font-family: 'Roboto', sans-serif;
+
+}
+.btn-custom:hover{
+    background-color: #007dc5;
+    border: 1px solid transparent;
+}
+
+.check{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.check .form-group{
+    margin-bottom: 0;
+}
+
+footer{
+    background-color: #007dc5;
+    padding: 50px 0;
+
+
+}
+
+.footer .copyright{
+  
+
+    
+}
+
+.copyright ul{
+
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 0px;
+
+    
+}
+.copyright li{
+
+
+
+
+    
+}
+
+.copyright ul li a{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: white;
+    
+
+
+
+    
+}
+
+.footer .social{
+
+
+    
+}
+
+.social ul{
+    
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 0px;
+
+    
+}
+.social li{
+
+    
+}
+
+.social ul li a{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: white;
+
+    
+   
+}
